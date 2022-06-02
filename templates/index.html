@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<form action="/calculate" method="GET">
+    <input autocomplete="off" autofocus name="url" placeholder="Enter Playlist URL" type="text">
+    <input type="submit" value="Calculate">
+</form>
+
+{{output}}
+{{h}} {{m}} {{s}}
+
+<img src="/static/logo.png" alt="">
+
+
+{% endblock %}
